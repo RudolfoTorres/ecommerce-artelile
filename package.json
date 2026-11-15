@@ -1,0 +1,14 @@
+{
+  "name": "ecommerce-artelile",
+  "private": true,
+  "scripts": {
+    "dev": "npx concurrently -n \"MEDUSA,STORE\" -c \"blue,magenta\" \"cd medusa && npm run dev\" \"cd storefront && npm run dev\"",
+    "build:storefront": "cd storefront && npm run build",
+    "build:medusa": "cd medusa && npm run build"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
+
+}
